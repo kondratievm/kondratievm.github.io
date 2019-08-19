@@ -1,1 +1,2 @@
-# kondratievm.github.io
+# gulp-start-pattern
+Скоро здесь будет описана документация по работе с данным gulp шаблоном

@@ -1,0 +1,152 @@
+.about-block {
+  padding: 70px 0;
+  background: $bg_gray;
+}
+
+.about-block-content-bottom {
+  display: flex;
+
+  @include media_interval(0, $media768) {
+    flex-direction: column;
+  }
+}
+
+.about-block-content-item {
+  &:nth-child(1) {
+    margin-right: 20px;
+    flex: 1 1 20%;
+
+    @include media_interval(0, $media768) {
+      margin: 0 0 20px 0;
+      flex: 1 1 100%;
+    }
+  }
+  &:nth-child(2) {
+    flex: 1 1 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include media_interval(0, $media768) {
+      flex: 1 1 100%;
+    }
+  }
+}
+
+.about-block-img-wrapper {
+  position: relative;
+  width: 280px;
+  height: 265px;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.about-block__img {
+  position: absolute;
+  max-width: none;
+  max-height: 0;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.about-block-content-description-wrapper {
+  margin-bottom: 30px;
+}
+
+.about-block-content-description {
+  font-size: 20px;
+  line-height: 27px;
+  color: $black;
+  font-weight: 100;
+
+  @include media_interval($media640, $media980) {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  @include media_interval(0, $media640) {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.about-block-title-wrapper {
+  margin-bottom: 35px;
+
+  @include media_interval(0, $media560) {
+      margin-bottom: 20px;
+  }
+}
+
+.about-title {
+  font-size: 45px;
+  line-height: 61px;
+
+  @include media_interval(0, $media560) {
+    font-size: 28px;
+    line-height: 30px; 
+  }
+}
+
+.about-block-icon-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.about-block-icon-item {
+  display: flex;
+  align-items: center;
+
+  width: 28%;
+
+  @include media_interval(0, $media1180) {
+    flex-direction: column;
+  }
+  @include media_interval(0, $media560) {
+    width: 50%;
+
+    &:first-child {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.about-block-icon-name {
+  margin-left: 15px;
+
+  @include font_default;
+  font-size: 24px;
+  line-height: 33px;
+  color: $black;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  @include media_interval(0, $media980) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  @include media_interval(0, $media560) {
+    margin-left: 0;
+  }
+}
+
+.about-block-icon {
+  min-width: 71px;
+  height: 71px;
+  background: $sprite_url 0px -7px;
+
+  @each $item in ((house, 0), (mac, -70), (calendar, -142)) {
+    &.#{nth($item, 1)} {
+      background-position: #{nth($item, 2)}px -7px;
+    }
+  }
+}
+
+.about-btn-wrapper {
+  display: flex;
+  justify-content: center;
+}

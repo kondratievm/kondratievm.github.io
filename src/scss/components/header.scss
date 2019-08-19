@@ -1,0 +1,45 @@
+.header {
+  background-color: $white;
+  
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 35px 0;
+  }
+  &-menu-box {
+    @include media_interval(0, $media560) {
+      display: none;
+    }
+  }
+  &__logo {
+    width: 115px;
+    height: 47px;
+    display: block;
+
+    background-image: url(./img/logo.png);
+    background-size: cover;
+    box-shadow: 0 5px 16px -8px rgba(0,0,0, .74);
+  }
+  &__link {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 300;
+    color: $black;
+    @include font_default;
+    
+    &_active {
+      color: cornflowerblue;
+    }
+
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
+    &:hover {
+      opacity: .7;
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+//Импорт общих стилей
+@import "./components/common";
+
+//Импорт шрифтов
+@import "./components/fonts";
+
+//Импорт стилей страниц
+@import "./pages/index";
+@import "./pages/contacts";
+@import "./pages/blog";
+@import "./pages/blog_detail";
+@import "./pages/about";
+@import "./pages/gallery";
+@import "./pages/animation";
+@import "./pages/js";
+@import "./pages/function";
+@import "./pages/dom";
+@import "./pages/events";
+
+//Импорт компонентов для страниц
+@import "./components/header";
+@import "./components/footer";
+@import "./components/btns.scss";
+@import "./components/card.scss";
+@import "./components/social_card.scss";
+@import "./components/gallery_block.scss";
+
+
+//Импорт миксинов
+@import "./mixins/flex_columns.scss";
+@import "./mixins/flex.scss";
+@import "./mixins/media.scss";
+@import "./mixins/all.scss";

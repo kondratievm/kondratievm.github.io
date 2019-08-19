@@ -1,0 +1,116 @@
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="main.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-reboot.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap" rel="stylesheet">
+    <title>Gulp start pattern - стартовый gulp шаблон от DL Academy</title>
+  </head>
+  <body>
+    @@include('./../components/header.html')
+    <div class="start-block">
+      <div class="container">
+        <div class="start-block__content">
+          <h1 class="title-block title--margin-bottom title--white title-block_one">ОБО МНЕ</h1>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="start-block-content-bottom">
+          <div class="start-block-content-item">
+            <div class="start-block-img-wrapper">
+              <img class="start-block__img" src="./img/girl.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="start-block-content-item">
+            <div class="start-block-content-description-wrapper">
+              <div class="start-block-content-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                distinctio quasi culpa eveniet assumenda quia qui molestiae est
+                ea odio quos voluptatibus perspiciatis, ipsam impedit tempore
+                ducimus omnis deserunt adipisci inventore dicta consectetur,
+                reiciendis fugiat ad! Eum excepturi accusantium amet odio
+                corporis? Odio dignissimos repudiandae vero sapiente voluptatum
+                laboriosam fuga quidem quos, nostrum voluptate, qui recusandae
+                commodi. Aliquid tenetur repellat velit assumenda sapiente
+                aspernatur ratione, error labore pariatur cum architecto debitis
+                odio mollitia unde officiis distinctio quia quam, voluptas
+                quidem quasi dolorum, repudiandae obcaecati. Veniam voluptatibus
+                dolorum iste molestiae repellat officiis quibusdam recusandae
+                sequi cupiditate, sit corrupti! Illo, esse quibusdam?
+              </div>
+            </div>
+
+            <div class="start-block-content-btn-wrapper">
+              @@include('./../components/ btns.html', { 
+                "text": "Подробнее",
+                "href": "about" 
+              })
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-block">
+      <div class="container">
+        <div class="contact-block__content">
+          <h2 class="title-block title--margin-bottom title--black title--center">МОЙ БЛОГ</h2>
+
+          <div class="card-wrapper">
+            <div class="card-item">
+              @@include('./../components/card.html')
+            </div>
+            <div class="card-item">
+              @@include('./../components/card.html')
+            </div>
+            <div class="card-item">
+              @@include('./../components/card.html')
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-block-btn-wrapper">
+        <div class="container">
+          @@include('./../components/ btns.html', { 
+            "text": "Посмотреть все новости",
+            "href": "about" 
+          })
+        </div>
+      </div>
+    </div>
+
+    <div class="social-block">
+      <div class="container">
+
+        <div class="social-block-title-wrapper">
+          <div class="title-block title--margin-bottom title--black title--center">КОНТАКТЫ</div>
+        </div>
+
+        <div class="social-block-content">
+          <div class="social-block-content__item">
+            @@include('./../components/social_card.html')
+          </div>
+          <div class="social-block-content__item">
+            @@include('./../components/social_card.html')
+          </div>
+          <div class="social-block-content__item">
+            @@include('./../components/social_card.html')
+          </div>
+          <div class="social-block-content__item">
+            @@include('./../components/social_card.html',)
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    @@include('./../components/footer.html')
+  </body>
+  <script src="./js/main.js"></script>
+</html>

@@ -1,0 +1,101 @@
+.card {
+  display: block;
+  background: $white;
+  font-size: 20px;
+}
+
+.card-img-wrapper {
+  position: relative;
+  padding-bottom: 59%;
+  overflow: hidden;
+}
+
+.card__img {
+  position: absolute;
+  max-width: none;
+  max-height: 0;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.card-inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.card-title-wrapper {
+  margin-bottom: 10px;
+}
+
+.card-title {
+  @include font_default;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+
+  @include media_interval($media640, $media980) {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  @include media_interval(0, $media640) {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.card-description-wrapper {
+  margin-bottom: 47px;
+
+  @include media_interval(0, $media980) {
+    margin-bottom: 15px;
+  }
+}
+
+.card-description {
+  @include font_default;
+  font-size: 20px;
+  line-height: 27px;
+  color: $black;
+  font-weight: 300;
+
+  @include media_interval($media640, $media980) {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  @include media_interval(0, $media640) {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.card-btn-date-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-btn-wrapper {
+  margin-right: 10px;
+}
+
+.card__date {
+  @include font_default;
+  font-size: 20px;
+  line-height: 27px;
+  color: $black;
+  font-weight: 300;
+
+  @include media_interval($media640, $media1180) {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  @include media_interval(0, $media640) {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

@@ -1,0 +1,44 @@
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="main.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-reboot.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Gulp start pattern - стартовый gulp шаблон от DL Academy</title>
+  </head>
+  <body class="flex-context">
+      @@include('./../components/header.html')
+
+    <div class="animation-block">
+      <div class="container">
+        <div class="animation-block-wrapper">
+          <div class="animation-item">
+            <div class="animation-img-wrapper">
+              <img class="animation-img animated-swing swing" src="./img/cat.png" alt="" />
+            </div>
+          </div>
+
+          <div class="animation-item">
+            <div class="animation-img-wrapper">
+              <img class="animation-img animated-bounce bounce" src="./img/cat2.png" alt="" />
+            </div>
+          </div>
+
+          <div class="animation-item">
+            <div class="animation-img-wrapper">
+              <img class="animation-img animated-wiggle wiggle" src="./img/cat3.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    @@include('./../components/footer.html')
+  </body>
+</html>

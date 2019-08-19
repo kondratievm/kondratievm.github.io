@@ -1,0 +1,23 @@
+.gallery-block {
+    padding: 50px 0;
+}
+
+.gallery-block-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.gallery-block-item {
+  @include flex-columns(3, 20px, 20px);
+
+  @include media_interval($media560, $media768) {
+    @include flex-columns(2, 20px, 20px);
+
+    &:nth-of-type(3) {
+        margin-right: 20px;
+    }
+  }
+  @include media_interval(0, $media560) {
+    @include flex-columns(1, 20px, 20px);
+  }
+}
