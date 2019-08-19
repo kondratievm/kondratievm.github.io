@@ -1,0 +1,1 @@
+var e=document.querySelectorAll(".event-item")[0];e.addEventListener("click",function(){e.style.backgroundColor="pink"});
